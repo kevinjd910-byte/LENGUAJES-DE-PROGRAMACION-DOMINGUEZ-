@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="card">
+    <main class="app">
       <section class="hero">
         <div>
-          <h1>Expendedora moderna</h1>
-          <p>Una interfaz elegante y sencilla para mostrar productos, saldo y opciones de compra en una sola vista.</p>
-          <a class="btn" href="#productos">Ver productos</a>
+          <div class="badge">Máquina expendedora</div>
+          <h1>Compra rápida y con estilo</h1>
+          <p>Una interfaz moderna para ver productos, controlar tu saldo y elegir tus snacks favoritos en segundos.</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#productos">Ver productos</a>
+            <a class="btn btn-secondary" href="#maquina">Ver máquina</a>
+          </div>
         </div>
 
-        <div class="machine" aria-label="maquina expendedora">
-          <div class="screen">
-            <div class="label">Saldo actual</div>
+        <div class="machine" id="maquina" aria-label="maquina expendedora">
+          <div class="machine__screen">
+            <p class="label">Saldo actual</p>
             <div class="amount">L. 25.00</div>
+            <p class="status">Listo para comprar</p>
           </div>
-          <div class="buttons">
+          <div class="machine__buttons">
             <button>Insertar</button>
             <button>Cancelar</button>
             <button>Seleccionar</button>
@@ -31,28 +36,40 @@
 
       <section class="products" id="productos">
         <article class="product">
-          <div class="emoji">💧</div>
+          <div class="product__icon">💧</div>
           <h3>Agua</h3>
           <p>Refrescante y ligera</p>
-          <div class="price">L. 10.00</div>
+          <div class="product__footer">
+            <span class="price">L. 10.00</span>
+            <button class="buy-btn">Comprar</button>
+          </div>
         </article>
         <article class="product">
-          <div class="emoji">🥤</div>
+          <div class="product__icon">🥤</div>
           <h3>Soda</h3>
           <p>Con gas y sabor intenso</p>
-          <div class="price">L. 15.00</div>
+          <div class="product__footer">
+            <span class="price">L. 15.00</span>
+            <button class="buy-btn">Comprar</button>
+          </div>
         </article>
         <article class="product">
-          <div class="emoji">🥔</div>
+          <div class="product__icon">🥔</div>
           <h3>Papas</h3>
           <p>Crunchy y saladas</p>
-          <div class="price">L. 12.50</div>
+          <div class="product__footer">
+            <span class="price">L. 12.50</span>
+            <button class="buy-btn">Comprar</button>
+          </div>
         </article>
         <article class="product">
-          <div class="emoji">🍫</div>
+          <div class="product__icon">🍫</div>
           <h3>Chocolate</h3>
           <p>Delicioso y cremoso</p>
-          <div class="price">L. 18.00</div>
+          <div class="product__footer">
+            <span class="price">L. 18.00</span>
+            <button class="buy-btn">Comprar</button>
+          </div>
         </article>
       </section>
     </main>
